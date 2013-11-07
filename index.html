@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Nombre del sitio</title>
+
+<!-- Imágenes para iOS -->
+	<link href="images/apple/icon.png" sizes="57x57" rel="apple-touch-icon" />
+	<link href="images/apple/icon-72.png" sizes="72x72" rel="apple-touch-icon" />
+	<link href="images/apple/icon-76.png" sizes="76x76" rel="apple-touch-icon" />
+	<link href="images/apple/icon@2x.png" sizes="114x114" rel="apple-touch-icon" />
+	<link href="images/apple/icon-120.png" sizes="120x120" rel="apple-touch-icon" />
+	<link href="images/apple/icon-72@2x.png" sizes="144x144" rel="apple-touch-icon" />
+	<link href="images/apple/icon-76@2x.png" sizes="152x152" rel="apple-touch-icon" />
+
+	<link href="images/apple/touch-startup-image-320x460.png" media="(device-width: 320px)" rel="apple-touch-startup-image" />
+	<link href="images/apple/touch-startup-image-640x920.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="images/apple/touch-startup-image-768x1004.png" media="(device-width: 768px) and (orientation: portrait)" rel="apple-touch-startup-image" />
+	<link href="images/apple/touch-startup-image-1536x2008.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="images/apple/touch-startup-image-1024x748.png" media="(device-width: 768px) and (orientation: landscape)" rel="apple-touch-startup-image" />
+	<link href="images/apple/touch-startup-image-2048x1496.png" media="(device-width: 1536px)  and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+<!-- iOS webapp -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable = no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="format-detection" content="telephone=no" />
+
+<link rel="shortcut icon" href="images/favicon.png" />
+
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/jquery.1.10.1.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+<!-- Sin prefijos (-moz, -webkit, etc) -->
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+<script type="text/javascript" src="js/prefixfree.jquery.js"></script>
+
+<!-- Slider -->
+<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+<!-- Gestos de deslizar en móviles -->
+<script type="text/javascript" src="js/jquery.cycle2.swipe.min.js"></script>
+
+<!-- Cuando estamos en modo webapp en iOS, mantenemos los links abriendo en la misma app y no en safari -->
+<script type="text/javascript" src="js/ios.webapp.links.js"></script>
+
+<script type="text/javascript" src="js/jquery.fs.naver.min.js"></script>
+<link href="js/jquery.fs.naver.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+// si tienen, le quitamos la altura y ancho a todas las imágenes del sitio para "responsivizar".
+$('img').removeAttr('height').removeAttr('width');
+
+if(navigator.userAgent.match(/(iPad|iPhone|iPod touch);.*CPU.*OS 7_\d/i) && window.navigator.standalone == true) {
+	$('body').addClass('ios7');
+}
+
+$("#main_nav").naver({
+    animated: true,
+	labelClosed: 'Menu&nbsp;&nbsp;&darr;',
+	labelOpen: 'Menu&nbsp;&nbsp;&uarr;'
+});
+
+});
+</script>
+
+<!-- Tags de Facebook para elegir la información que se ve en el muro al compartir tu sitio -->
+<link rel="image_src" href="" />
+<meta property="fb:app_id" content=""/>
+<meta property="og:title" content="" />
+<meta property="og:type" content="website" /> 
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content="" />
+<meta property="fb:admins" content="" />
+<meta property="og:description" content=""/>
+
+</head>
+
+<body>
+
+<div id="statusbar"></div>
+
+<div id="wrapper">
+
+<div class="separator"></div>
+
+<header id="main_header">
+<a id="logo" href="#"><img src="images/blank.gif" alt="" /></a>
+
+<div class="clear separator"></div>
+
+<nav id="main_nav">
+<ul>
+<li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li><li><a href="#">Link</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="separator"></div>
+
+<section id="featured" class="cycle-slideshow"
+	data-cycle-slides="> .feature"
+	data-cycle-pause-on-hover="true"
+	data-cycle-timeout="5000"
+	data-cycle-pager="> .pager"
+	data-cycle-pager-template="<li><a></a></li>"
+	data-cycle-speed="1200"
+	data-cycle-log="false"
+	data-cycle-swipe="true"
+	data-cycle-fx="scrollHorz"
+	data-cycle-easing="easeInOutQuart"
+	data-cycle-prev=".larr"
+	data-cycle-next=".rarr"
+	data-cycle-update-view="1">
+
+<div class="feature">
+<figure><a href="#"><img src="images/blank.gif" alt="" /></a></figure>
+<h3><a href="#">T&iacute;tulo</a></h3>
+</div>
+
+<div class="feature">
+<figure><a href="#"><img src="images/blank.gif" alt="" /></a></figure>
+<h3><a href="#">T&iacute;tulo</a></h3>
+</div>
+
+<a class="larr"></a>
+<a class="rarr"></a>
+<ul class="pager"></ul>
+</section>
+
+<div class="separator"></div>
+
+<section id="content">
+
+<article>
+<h3><a href="#">T&iacute;tulo</a></h3>
+<figure><a href="#"><img src="images/blank.gif" alt="" /></a>
+<figcaption>Descripci&oacute;n de imagen</figcaption></figure>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</article>
+
+</section>
+
+<section id="sidebar">
+<aside>
+<h4>T&iacute;tulo</h4>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</p>
+</aside>
+</section>
+
+<div class="clear separator"></div>
+
+<footer id="main_footer">
+Copyright.
+</footer>
+
+<div class="separator"></div>
+
+</div><!--END PAGE-->
+
+</body>
+</html>
