@@ -1,5 +1,5 @@
 # Plantilla-HTML-CSS-JS
-### por Diego Quintana / http://diegoquintana.com
+### Por <a href="http://diegoquintana.com">Diego Quintana</a>
 
 En todos los proyectos web hay un proceso metódico que es el código base donde empezar el proyecto, y este es el que yo uso para los míos.
  
