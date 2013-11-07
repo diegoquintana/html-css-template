@@ -18,9 +18,10 @@ Algunos puntos:
 - El layout está pensado para un *blog* clásico. Cabecera, slider de destacados arriba, contenido a la izquierda, sidebar a la derecha, footer abajo. Pero de todas maneras sirve para cualquier otra cosa.
 
 - Dentro de *images* sólo hay archivos transparentes que sirven como plantilla para las imágenes que aparecen en el HTML.
-La plantilla usa entre otros, el *pollyfill* <a href="">Prefix free</a> por lo que para verla en tu navegador necesitas estar sobre un servidor (en línea o en *localhost*). O sea no sirve hacerle doble click al *index* para verla.
+La plantilla usa entre otros, el *pollyfill* <a href="http://leaverou.github.io/prefixfree/">Prefix free</a> por lo que para verla en tu navegador necesitas estar sobre un servidor (en línea o en *localhost*). O sea no sirve hacerle doble click al *index* para verla.
 
 - Los scripts son versiones que a mí me acomodan y están a la fecha (*7 de Noviembre, 2013*). Voy a tratar de mantenerla al día pero cuando la uses sería ideal verifiques cada script.
-**No la he probado en IE**. Probablemente no se rompe; pero no garantizo nada.
+
+- **No la he probado en IE**. Probablemente no se rompe; pero no garantizo nada.
 
 **Espero te sirva. Cualquier duda simplemente deje su comentario. Un abrazo.**
