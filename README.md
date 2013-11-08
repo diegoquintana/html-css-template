@@ -1,5 +1,15 @@
 # Plantilla-HTML-CSS-JS
-### Por <a href="http://diegoquintana.com">Diego Quintana</a>
+### Por <a href="http://diegoquintana.com">Diego Quintana</a>.
+
+#### Historial
+
+**v0.11**
+Corregido un error que en iOS7, si se abría el sitio por Safari, se seguía viendo el "fondo" de la status bar. Ahora sólo aparece al entrar en modo web app.
+---
+**v0.1**
+Plantilla inicial
+
+---
 
 En todos los proyectos web hay un proceso metódico que es el código base donde empezar el proyecto, y este es el que yo uso para los míos.
  
@@ -24,4 +34,4 @@ La plantilla usa entre otros, el *pollyfill* <a href="http://leaverou.github.io/
 
 - **No la he probado en IE**. Probablemente no se rompe; pero no garantizo nada.
 
-**Espero te sirva. Cualquier duda simplemente deje su comentario. Un abrazo.**
+**Un abrazo.**
