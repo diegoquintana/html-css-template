@@ -4,6 +4,7 @@
 ---
 
 #### Historial
+**v0.1.2:** Easing del menu desplegable responsivo.
 
 **v0.1.1:** Corregido un error que en iOS7, si se abría el sitio por Safari, se seguía viendo el "fondo" de la status bar. Ahora sólo aparece al entrar en modo web app.
 
