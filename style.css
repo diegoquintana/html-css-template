@@ -201,6 +201,23 @@ figcaption {
 	padding-top: 5px; padding-top: .5rem;
 }
 
+.video_holder { /* Este div se genera por jquery */
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%; /* 16:9. Cambiar a la proporción requerida */
+}
+
+.video_holder > video, .video_holder > iframe, .video_holder object, .video_holder embed {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
 * {
 	-webkit-backface-visibility: hidden;
 }
