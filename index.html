@@ -4,26 +4,35 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Nombre del sitio</title>
 
-<!-- Imágenes para iOS -->
-	<link href="images/apple/icon.png" sizes="57x57" rel="apple-touch-icon" />
-	<link href="images/apple/icon-72.png" sizes="72x72" rel="apple-touch-icon" />
-	<link href="images/apple/icon-76.png" sizes="76x76" rel="apple-touch-icon" />
-	<link href="images/apple/icon@2x.png" sizes="114x114" rel="apple-touch-icon" />
-	<link href="images/apple/icon-120.png" sizes="120x120" rel="apple-touch-icon" />
-	<link href="images/apple/icon-72@2x.png" sizes="144x144" rel="apple-touch-icon" />
-	<link href="images/apple/icon-76@2x.png" sizes="152x152" rel="apple-touch-icon" />
+<!-- Imágenes para iOS (la parte "precomposed" del atributo "rel" evita que iOS le asigne el efecto de brillo al ícono) -->
+	<link href="images/apple/icon.png" sizes="57x57" rel="apple-touch-icon-precomposed" />
+	<link href="images/apple/icon-72.png" sizes="72x72" rel="apple-touch-icon-precomposed" />
+	<link href="images/apple/icon-76.png" sizes="76x76" rel="apple-touch-icon-precomposed" />
+	<link href="images/apple/icon@2x.png" sizes="114x114" rel="apple-touch-icon-precomposed" />
+	<link href="images/apple/icon-120.png" sizes="120x120" rel="apple-touch-icon-precomposed" />
+	<link href="images/apple/icon-72@2x.png" sizes="144x144" rel="apple-touch-icon-precomposed" />
+	<link href="images/apple/icon-76@2x.png" sizes="152x152" rel="apple-touch-icon-precomposed" />
 
 	<link href="images/apple/touch-startup-image-320x460.png" media="(device-width: 320px)" rel="apple-touch-startup-image" />
-	<link href="images/apple/touch-startup-image-640x920.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="images/apple/touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="images/apple/touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
 	<link href="images/apple/touch-startup-image-768x1004.png" media="(device-width: 768px) and (orientation: portrait)" rel="apple-touch-startup-image" />
-	<link href="images/apple/touch-startup-image-1536x2008.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="images/apple/touch-startup-image-1536x2008.png" media="(device-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
 	<link href="images/apple/touch-startup-image-1024x748.png" media="(device-width: 768px) and (orientation: landscape)" rel="apple-touch-startup-image" />
-	<link href="images/apple/touch-startup-image-2048x1496.png" media="(device-width: 1536px)  and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="images/apple/touch-startup-image-2048x1496.png" media="(device-width: 768px)  and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
 
 <!-- iOS webapp -->
+	<!-- Barra de estado transparente en iOS7 o semi-transparente negra en versiones anteriores -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Titulo bajo el ícono de la web app (máximo 13 caractéres) -->
+    <meta name="apple-mobile-web-app-title" content="Mi Web App">
+    <!-- Ajustar tamaño del sitio al dispositivo en que se está visualizando y bloquear zoom con 2 dedos -->
 	<meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable = no" />
+    <!-- Activar modo web app (pantalla completa) -->
 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Evitar el auto ajuste del tamaño de texto al rotar el dispositivo -->
+    <style>html { -webkit-text-size-adjust: 100%; }</style>
+    <!-- No detectar automáticamente los números telefónicos -->
 	<meta name="format-detection" content="telephone=no" />
 
 <link rel="shortcut icon" href="images/favicon.png" />
@@ -53,7 +62,7 @@
 $(document).ready(function(){
 
 // si tienen, le quitamos la altura y ancho a todas las imágenes del sitio para "responsivizar".
-$('img').removeAttr('height').removeAttr('width');
+$('img').removeAttr('height width');
 
 //envolvemos todos los videos o embeds en un div para hacerlos responsivos.
 $('video, iframe, embed, object').wrap('<div class="video_holder"></div>');
@@ -86,6 +95,7 @@ $("#main_nav").naver({
 
 <body>
 
+<!-- Fondo statusbar iOS7 -->
 <div id="statusbar"></div>
 
 <div id="wrapper">

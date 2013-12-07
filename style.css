@@ -93,6 +93,7 @@ object {
 
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.1;
+	letter-spacing: normal;
 	display: block;
 }
 
@@ -128,6 +129,7 @@ html {
 body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 14px; font-size: 1.4rem;
+	letter-spacing: 1px; letter-spacing: 0.1rem;
 	line-height: 1.4;
 	color: #000;
 	background: #fff;
@@ -332,7 +334,7 @@ figcaption {
 	width: 10px; width: 1rem;
 	background: #000;
 	height: 10px; height: 1rem;
-	border-radius: px; border-radius: .5em;
+	border-radius: 5px; border-radius: .5em;
 }
 
 #content {
