@@ -4,6 +4,13 @@
 ---
 
 #### Historial
+**v0.1.4**
+- Agregada imagen de inicio para web app en iPhone 5.
+- Íconos de web app sin efectos (brillo).
+- Correcciones a imágenes modo web app en dispositivos Retina.
+- Explicaciones meta tags iOS.
+- Correcciones pequeñas.
+
 **v0.1.3:** Videos responsivos y por defecto en proporción 16:9.
 
 **v0.1.2:** Easing del menu desplegable responsivo.
