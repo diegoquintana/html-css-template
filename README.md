@@ -5,7 +5,7 @@
 
 #### Historial
 **v0.1.5**
-- Agregado *Picturefill.js* para imagenes responsivas (https://github.com/scottjehl/picturefill).
+- Agregado *Picturefill.js* para imágenes responsivas (https://github.com/scottjehl/picturefill).
 
 **v0.1.4**
 - Agregada imagen de inicio para web app en iPhone 5.
@@ -34,7 +34,7 @@ Algunos puntos:
  
 - Se utilizan *HTML5* y *CSS3* para cosas simples (markup más semántico, transiciones, etc) y está preparada para *iOS7* en modo webapp (status bar transparente, etc).
 
-- Los elementos *img* no están pensados para aparatos retina aun. Todavía no me decido por un *polyfill*.
+- Usa el *polyfill* **Picturefill** de Scott Jehl para imágenes responsivas donde corresponde. Recordad generar las versiones de cada imagen y repasar el README del polyfill en https://github.com/scottjehl/picturefill
 
 - La carpeta tiene un *index.html*, un *style.css* y una carpeta *images* y *js (javascript)*. Los archivos vienen con algunos comentarios aclaratorios donde creí fueran pertinentes; pero la idea es que sirva para ir aprendiendo editando y “metiendo la pata”.
 
