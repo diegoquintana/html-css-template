@@ -1,9 +1,12 @@
 # Plantilla-HTML-CSS-JS
-### Por <a href="http://diegoquintana.com">Diego Quintana</a>.
+### Por <a href="http://diegoquintana.com">Diego Quintana</a> con scripts asociados a cada autor.
 
 ---
 
 #### Historial
+**v0.1.5**
+- Agregado *Picturefill.js* para imagenes responsivas (https://github.com/scottjehl/picturefill).
+
 **v0.1.4**
 - Agregada imagen de inicio para web app en iPhone 5.
 - Íconos de web app sin efectos (brillo).

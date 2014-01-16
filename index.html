@@ -47,6 +47,9 @@
 <script type="text/javascript" src="js/prefixfree.min.js"></script>
 <script type="text/javascript" src="js/prefixfree.jquery.js"></script>
 
+<!-- Imagenes responsivas -->
+<script type="text/javascript" src="js/picturefill.js"></script>
+
 <!-- Slider -->
 <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
 <!-- Gestos de deslizar en móviles -->
@@ -132,12 +135,26 @@ $("#main_nav").naver({
 	data-cycle-update-view="1">
 
 <div class="feature">
-<figure><a href="#"><img src="images/blank.gif" alt="" /></a></figure>
+<figure><a href="#"><span data-picture data-alt="Nombre de la imagen">
+        <span data-src="images/s.gif"></span>
+        <span data-src="images/m.gif"     data-media="(min-width: 481px)"></span>
+        <span data-src="images/l.gif"      data-media="(min-width: 769px)"></span>
+        <span data-src="images/xl.gif" data-media="(min-width: 1025px)"></span>
+        <!-- Respaldo para navegadores sin Javacript -->
+        <noscript><img src="images/s.gif" alt="Nombre de la imagen" /></noscript>
+    </span></a></figure>
 <h3><a href="#">T&iacute;tulo</a></h3>
 </div>
 
 <div class="feature">
-<figure><a href="#"><img src="images/blank.gif" alt="" /></a></figure>
+<figure><a href="#"><span data-picture data-alt="Nombre de la imagen">
+        <span data-src="images/s.gif"></span>
+        <span data-src="images/m.gif"     data-media="(min-width: 481px)"></span>
+        <span data-src="images/l.gif"      data-media="(min-width: 769px)"></span>
+        <span data-src="images/xl.gif" data-media="(min-width: 1025px)"></span>
+        <!-- Respaldo para navegadores sin Javacript -->
+        <noscript><img src="images/s.gif" alt="Nombre de la imagen" /></noscript>
+    </span></a></figure>
 <h3><a href="#">T&iacute;tulo</a></h3>
 </div>
 
