@@ -116,7 +116,7 @@ img {
 
 
 
-
+/* Color del texto al seleccionar con el mouse */
 ::selection {
 	background: rgba(0,0,0,.99);
 	color: #fff;
@@ -180,6 +180,7 @@ h4 {
 a {
 	color: #000;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
 
 a:hover {
@@ -221,8 +222,13 @@ figcaption {
 }
 
 * {
+	outline: 1px solid transparent;
+}
+
+/* USAR EN DIVS QUE SE QUIERA QUE EL TEXTO RENDERICE SMOOTH EN WEBKIT, PERO NO EN TODO EL SITIO {
 	-webkit-backface-visibility: hidden;
 }
+*/
 
 #wrapper {
 	width: 90%;

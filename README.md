@@ -4,6 +4,12 @@
 ---
 
 #### Historial
+**v0.1.6**
+- Se quitó -webkit-backface-visibility: hidden; del selector * porque se caen las web en algunas versiones de iOS. Se dejó con comentario para uso a discreción.
+- Agregados algunos comentarios en el HTML.
+- Cambio de jquery 1.10.1 a 1.11.1.min.
+- Última versión de picturefill.js.
+
 **v0.1.5**
 - Agregado *Picturefill.js* para imágenes responsivas (https://github.com/scottjehl/picturefill).
 
