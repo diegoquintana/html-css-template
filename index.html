@@ -95,6 +95,10 @@ if(navigator.userAgent.match(/(iPad|iPhone|iPod touch);.*CPU.*OS 7_\d/i) && wind
 	$('body').addClass('ios7');
 }
 
+if(navigator.userAgent.match(/(iPad|iPhone|iPod touch);.*CPU.*OS 8_\d/i) && window.navigator.standalone) {
+	$('body').addClass('ios8');
+}
+
 $("#main_nav").naver({
     animated: true,
 	labelClosed: 'Menu&nbsp;&nbsp;&darr;',
