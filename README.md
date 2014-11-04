@@ -42,9 +42,9 @@ Está hecha en *HTML5*, *CSS3*, *JS* y es responsiva. **NO ES** un framework. Es
 
 Algunos puntos:
  
-- Se utilizan *HTML5* y *CSS3* para cosas simples (markup más semántico, transiciones, etc) y está preparada para *iOS7* en modo webapp (status bar transparente, etc).
+- Se utilizan *HTML5* y *CSS3* para cosas simples (markup más semántico, transiciones, etc) y está preparada para *iOS7+* en modo webapp (status bar transparente, etc).
 
-- Usa el <a href="https://github.com/scottjehl/picturefill">*polyfill* **Picturefill**</a> de Scott Jehl para imágenes responsivas donde corresponde. Recordad generar las versiones de cada imagen.
+- Usa el <a href="https://github.com/scottjehl/picturefill">*polyfill* **Picturefill**</a> de Scott Jehl para imágenes responsivas donde corresponde. Recordar generar las versiones de cada imagen.
 
 - La carpeta tiene un *index.html*, un *style.css* y una carpeta *images* y *js (javascript)*. Los archivos vienen con algunos comentarios aclaratorios donde creí fueran pertinentes; pero la idea es que sirva para ir aprendiendo editando y “metiendo la pata”.
 
