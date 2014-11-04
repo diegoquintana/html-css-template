@@ -4,6 +4,10 @@
 ---
 
 #### Historial
+**v0.1.7**
+- Se agregaron las imágenes de inicio para webapp en iOS en iPhone6 y iPhone6+.
+- Se modificaron algunos códigos e imágenes para las imágenes de inicio para webapp en iOS y se agregaron los comentarios pertinentes indicando cada imagen.
+
 **v0.1.6**
 - Se quitó -webkit-backface-visibility: hidden; del selector * porque se caen las web en algunas versiones de iOS. Se dejó con comentario para uso a discreción.
 - Agregados algunos comentarios en el HTML.
